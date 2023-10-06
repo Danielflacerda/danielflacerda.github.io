@@ -1,19 +1,31 @@
-﻿.profile-container{
+﻿.profile-picture {
+    border: 3px solid #000000;
+    margin: 10px;
+    max-width: 80%;
+}
+
+.profile-container{
     display: flex;
     justify-content: space-between;
+    height: 80vh;
     @media (max-width: 991px) {
         flex-wrap: wrap;
     }
 }
 
+.profile-container p,h1,h2,h3,h4 {
+    color: white;
+}
+
 
 .profile-left-panel{
     max-width: 25%;
-    margin: 10px;
+    background-color: #1E2761;
+    margin: 20px;
     border: 1px solid;
     border-radius: 15px;
     padding: 10px;
-    box-shadow: -5px 10px #888888;
+    box-shadow: -5px 10px #147ac4;
     @media (max-width: 991px) {
         max-width: 100%;
     }
@@ -23,10 +35,14 @@
         max-width: 100%;
     }
     max-width: 75%;
-    margin: 10px;
+    background-color:  #1E2761;
+    margin: 20px;
     border: 1px solid;
     border-radius: 15px;
     padding: 10px;
-    box-shadow: -5px 10px #888888;
+    box-shadow: -5px 10px #147ac4;;
 }
 
+.stack-carousel{
+    max-height: 20%;
+}

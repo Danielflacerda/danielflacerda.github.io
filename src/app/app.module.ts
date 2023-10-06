@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CounterComponent } from './counter/counter.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { StackcarouselComponent } from './stackcarousel/components/stackcarousel/stackcarousel.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProjectsComponent } from './projects/projects.component';
     FetchDataComponent,
     CounterComponent,
     ExperiencesComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    StackcarouselComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,11 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+nav {
+  border-bottom: 0px !important;
+  background: linear-gradient(#1E2761 0%, #408EC6 100%);
+}
+
 html {
   font-size: 14px;
 }
@@ -13,6 +18,3 @@ html {
   }
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
