@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CounterComponent } from './counter/counter.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CounterComponent } from './counter/counter.component';
     HomeComponent,
     NavMenuComponent,
     FetchDataComponent,
-    CounterComponent
+    CounterComponent,
+    ExperiencesComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { CounterComponent } from './counter/counter.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'experiences', component: ExperiencesComponent },
+      { path: 'projects', component: ProjectsComponent },
     ])
   ],
   providers: [],

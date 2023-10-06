@@ -1,9 +1,24 @@
+<style>
+.nav-link {
+  color: green;
+}
+
+.nav-item>a:hover {
+  color: green;
+}
+
+/*code to change background color*/
+.navbar-nav>.active>a {
+  background-color: #C0C0C0;
+  color: green;
+}
+  </style>
 <header>
   <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3"
   >
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">AngularStudyProjectPortfolium</a>
+      <i class="devicon-dot-net-plain colored" style="zoom: 350%"></i><a class="navbar-brand" [routerLink]="['/']">Daniel Pro Profile</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -20,22 +35,17 @@
         [ngClass]="{ show: isExpanded }"
       >
         <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-light" [routerLink]="['/']">Home</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
-              >Counter</a
-            >
+            <a class="nav-link text-light" [routerLink]="['/experiences']">Experiences</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
-            >
+            <a class="nav-link text-light" [routerLink]="['/projects']">Projects</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-light" [routerLink]="['/counter']">Counter</a>
           </li>
         </ul>
       </div>
