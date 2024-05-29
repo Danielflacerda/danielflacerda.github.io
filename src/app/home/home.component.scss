@@ -31,9 +31,6 @@
     }
 }
 .profile-right-panel{
-    @media (max-width: 991px) {
-        max-width: 100%;
-    }
     max-width: 75%;
     margin: 40px;
     padding: 25px;
@@ -41,10 +38,12 @@
     background: linear-gradient(145deg, #202a68, #1b2357);
     box-shadow:  11px 11px 22px #0c1027,
                  -11px -11px 22px #303e9b;
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
 }
 
 .carousel{
   display: block;
   height: 10em;
-  width: 25em;
 }
