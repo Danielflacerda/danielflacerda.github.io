@@ -25,7 +25,11 @@ jobs:
 
       # Passo 4: build do Next.js
       - name: Build project
-        run: npm run build
+        run: npm run build      
+        
+      # Passo 4.5: desabilitar Jekyll
+      - name: Disable Jekyll
+        run: touch ./out/.nojekyll
 
       # Passo 5: deploy para GitHub Pages
       - name: Deploy to GitHub Pages
