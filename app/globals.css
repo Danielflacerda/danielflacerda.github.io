@@ -128,11 +128,11 @@
 
 @layer utilities {
   .bg-gradient-vs {
-    background: linear-gradient(135deg, oklch(0.45 0.25 300), oklch(0.55 0.2 290));
+    background: linear-gradient(135deg, oklch(0.397 0.1521 318.17), oklch(0.2845 0.1011 318.65));
   }
 
   .bg-gradient-vs-dark {
-    background: linear-gradient(135deg, oklch(0.65 0.25 300), oklch(0.75 0.2 290));
+    background: linear-gradient(135deg, oklch(0.75 0.2 290), oklch(0.397 0.1521 318.17));
   }
 
   .text-gradient-vs {
