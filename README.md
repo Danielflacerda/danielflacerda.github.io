@@ -96,7 +96,7 @@ O projeto utiliza um sistema de cores baseado na cor principal `#8900b3` (roxo v
 ### 📞 Contato
 
 - **Email**: daniel.felacerda@hotmail.com
-- **LinkedIn**: [Daniel Ferreira Lacerda](https://linkedin.com/in/daniel-ferreira-lacerda)
+- **LinkedIn**: [Daniel Ferreira Lacerda](https://www.linkedin.com/in/071daniellacerda/)
 - **Localização**: Salvador - BA, Brasil
 
 ---
@@ -193,7 +193,7 @@ The project uses a color system based on the primary color `#8900b3` (vibrant pu
 ### 📞 Contact
 
 - **Email**: daniel.felacerda@hotmail.com
-- **LinkedIn**: [Daniel Ferreira Lacerda](https://linkedin.com/in/daniel-ferreira-lacerda)
+- **LinkedIn**: [Daniel Ferreira Lacerda](https://www.linkedin.com/in/071daniellacerda/)
 - **Location**: Salvador - BA, Brazil
 
 ---

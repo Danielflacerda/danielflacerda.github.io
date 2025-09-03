@@ -223,11 +223,11 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background transition-colors duration-300">
       {/* Header with gradient background */}
       <header className="bg-gradient-vs dark:bg-gradient-vs-dark text-white py-8 px-4 transition-all duration-300">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div>
-            <h1 className="text-3xl font-bold mb-2">Daniel Ferreira Lacerda</h1>
-            <p className="text-lg opacity-90">{t.currentPosition}</p>
-            <div className="flex items-center gap-4 mt-2 text-sm opacity-80">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-2">Daniel Ferreira Lacerda</h1>
+            <p className="text-base sm:text-lg opacity-90">{t.currentPosition}</p>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-2 text-sm opacity-80">
               <div className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
                 {t.location}
@@ -236,14 +236,14 @@ export default function Portfolio() {
                 <Phone className="w-4 h-4" />
                 (71) 99666-3080
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 break-all">
                 <Mail className="w-4 h-4" />
                 daniel.felacerda@hotmail.com
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 self-end sm:self-auto">
             {/* Language Toggle */}
             <div className="flex bg-white/20 rounded-lg p-1">
               {languages.map((lang) => (
@@ -276,7 +276,7 @@ export default function Portfolio() {
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 py-8">
         <Tabs defaultValue="about" className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-8">
+          <TabsList className="flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-5 mb-8">
             <TabsTrigger value="about" className="text-sm">
               {t.about}
             </TabsTrigger>
@@ -310,13 +310,13 @@ export default function Portfolio() {
                     <p className="text-muted-foreground leading-relaxed text-lg">{t.aboutDescription}</p>
                     <div className="flex gap-4 mt-6">
                       <Button variant="outline" size="sm" asChild>
-                        <a href="https://linkedin.com/in/daniel-lacerda" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/071daniellacerda/" target="_blank" rel="noopener noreferrer">
                           <Linkedin className="w-4 h-4 mr-2" />
                           LinkedIn
                         </a>
                       </Button>
                       <Button variant="outline" size="sm" asChild>
-                        <a href="https://github.com/daniel-lacerda" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Danielflacerda" target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4 mr-2" />
                           GitHub
                         </a>
@@ -360,7 +360,7 @@ export default function Portfolio() {
           {/* Skills Tab */}
           <TabsContent value="skills" className="space-y-6">
             <h2 className="text-2xl font-bold text-gradient-vs">{t.skillsTitle}</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">{t.backendSkills}</CardTitle>
@@ -441,7 +441,7 @@ export default function Portfolio() {
           {/* Projects Tab */}
           <TabsContent value="projects" className="space-y-6">
             <h2 className="text-2xl font-bold text-gradient-vs">{t.projectsTitle}</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projectsData.map((project, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -471,7 +471,7 @@ export default function Portfolio() {
           {/* Contact Tab */}
           <TabsContent value="contact" className="space-y-6">
             <h2 className="text-2xl font-bold text-gradient-vs">{t.contactTitle}</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card>
                 <CardHeader>
                   <CardTitle>Informações de Contato</CardTitle>
