@@ -275,7 +275,7 @@ export default function Portfolio() {
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 py-8">
-        <Tabs defaultValue="about" className="w-full">
+        <Tabs defaultValue="about" className="w-full justify-center">
           <TabsList className="flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-5 mb-8 centered">
             <TabsTrigger value="about" className="text-sm">
               {t.about}
@@ -286,6 +286,8 @@ export default function Portfolio() {
             <TabsTrigger value="skills" className="text-sm">
               {t.skills}
             </TabsTrigger>
+          </TabsList>
+          <TabsList className="flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-5 mb-8 centered">
             <TabsTrigger value="projects" className="text-sm">
               {t.projects}
             </TabsTrigger>
