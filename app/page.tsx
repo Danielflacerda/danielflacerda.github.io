@@ -275,24 +275,26 @@ export default function Portfolio() {
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 py-8 justify-center">
-        <Tabs defaultValue="about" className="w-full ">
-          <TabsList className="flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-5 mb-8 centered">
-            <TabsTrigger value="about" className="text-sm">
-              {t.about}
-            </TabsTrigger>
-            <TabsTrigger value="experience" className="text-sm">
-              {t.experience}
-            </TabsTrigger>
-            <TabsTrigger value="skills" className="text-sm">
-              {t.skills}
-            </TabsTrigger>
-            <TabsTrigger value="projects" className="text-sm">
-              {t.projects}
-            </TabsTrigger>
-            <TabsTrigger value="contact" className="text-sm">
-              {t.contact}
-            </TabsTrigger>
-          </TabsList>
+        <Tabs defaultValue="about" className="w-full">
+<TabsList className="flex flex-wrap gap-2 mb-8 justify-center items-center">
+  <TabsTrigger value="about" className="flex-1 min-w-[120px] text-center">
+    {t.about}
+  </TabsTrigger>
+  <TabsTrigger value="experience" className="flex-1 min-w-[120px] text-center">
+    {t.experience}
+  </TabsTrigger>
+  <TabsTrigger value="skills" className="flex-1 min-w-[120px] text-center">
+    {t.skills}
+  </TabsTrigger>
+  <TabsTrigger value="projects" className="flex-1 min-w-[120px] text-center">
+    {t.projects}
+  </TabsTrigger>
+  <TabsTrigger value="contact" className="flex-1 min-w-[120px] text-center">
+    {t.contact}
+  </TabsTrigger>
+</TabsList>
+
+
 
           {/* About Tab */}
           <TabsContent value="about" className="space-y-6">
